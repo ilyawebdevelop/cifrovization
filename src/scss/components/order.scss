@@ -1,0 +1,35 @@
+.order {
+  background: url('@img/order/bg.jpg') no-repeat center center / cover;
+  padding-top: 115px;
+  padding-bottom: 125px;
+  &Title {
+    max-width: 700px;
+  }
+  &Descr {
+    font-size: 22px;
+    color: #000;
+    line-height: normal;
+    margin-top: 14px;
+    margin-bottom: 30px;
+  }
+  &Form {
+    &Grid {
+      display: flex;
+      column-gap: 9px;
+      .inputW {
+        width: 290px;
+        input {
+          width: 100%;
+          box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+          background: #FFF;
+          border-radius: 50px;
+        }
+        .button {
+          width: 100%;
+          border-radius: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

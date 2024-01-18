@@ -1,0 +1,90 @@
+.ways {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background-color: #fff;
+  .container {
+    max-width: 1290px;
+  }
+  &Title {
+    margin-bottom: 60px;
+  }
+  &Item {
+    display: grid;
+    grid-template-columns: 378px auto;
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+    &L {
+      position: relative;
+
+      &::before {
+        content: '';
+        background-color: #367ADF;
+        border-radius: 15px;
+        height: 272px;
+        width: 198px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    &Title {
+      font-weight: 800;
+      color: #367ADF;
+      font-size: 24px;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+
+    &R {
+      border-radius: 15px;
+      background: #F7F7F7;
+      padding-right: 50px;
+      padding-top: 28px;
+      padding-left: 60px;
+      position: relative;
+      right: 15px;
+    }
+
+    &List {
+      color: #000;
+      font-size: 18px;
+      font-weight: 400;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 61px;
+      row-gap: 10px;
+      margin-bottom: 35px;
+
+      li {
+        position: relative;
+        padding-left: 24px;
+        grid-column: 6 span;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 7px;
+          background: url('@img/icons/arrow-list.svg') no-repeat center center / 6px;
+          width: 6px;
+          height: 11px;
+        }
+      }
+    }
+
+    &Img {
+      min-width: 378px;
+      height: 344px;
+      border-radius: 20px;
+      object-fit: cover;
+      position: relative;
+      left: 17px;
+      bottom: 19px;
+      position: relative;
+      z-index: 1;
+    }  
+  }
+}

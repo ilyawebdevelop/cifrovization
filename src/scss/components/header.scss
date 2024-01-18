@@ -1,0 +1,45 @@
+// Header
+.header {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  z-index: 1;
+
+  &Nav {
+    &List {
+      display: flex;
+      column-gap: 45px;
+
+      li {
+        a {
+          color: #fff;
+          transition: color .2s linear;
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 21px;
+            height: 1px;
+            background-color: #367ADF;
+            opacity: 0;
+            transition: opacity .2s linear;
+          }
+          &:hover {
+            color: #367ADF;
+            &:before {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &--main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

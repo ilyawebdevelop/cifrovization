@@ -1,0 +1,20 @@
+// Footer
+.footer {
+  background-color: #1B1B1B;
+  padding-top: 110px;
+  padding-bottom: 112px;
+  &Logo {
+    margin-bottom: 17px;
+  }
+  .copyright {
+    display: flex;
+    column-gap: 45px;
+    color: #fff;
+    font-size: 14px;
+    line-height: normal;
+  }
+  &Socials {
+    margin-left: 170px;
+  }
+ 
+}

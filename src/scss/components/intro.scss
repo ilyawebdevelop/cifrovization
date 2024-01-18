@@ -1,0 +1,41 @@
+.intro {
+  background-color: #0C0F15;
+
+  .container {
+    position: relative;
+    padding-top: 290px;
+    padding-bottom: 260px;
+  }
+  &Title {
+    color: #fff;
+    max-width: 585px;
+    font-size: 58px;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+    span {
+      color: #367ADF;
+    }
+  }
+  &Descr {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: #fff;
+    max-width: 490px;
+    position: relative;
+    z-index: 1;
+  }
+  &Image {
+    position: absolute;
+    right: -150px;
+    top: 30px;
+    width: 1375px;
+    height: 850px;
+  }
+  &Round {
+    position: absolute;
+    left: -300px;
+    top: 0;
+    width: 730px;
+  }
+}
