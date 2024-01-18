@@ -6,6 +6,9 @@
     @media(max-width: 1400px) {
       margin-top: 60px;
     }
+    @media(max-width: 767px){
+      margin-top: 40px;
+    }
 
     &::before {
       content: '';

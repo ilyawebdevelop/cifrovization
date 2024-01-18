@@ -15,6 +15,14 @@
     font-weight: 500;
     max-width: 566px;
     margin-top: 20px;
+    @media(max-width: 1400px){
+      font-size: 18px;
+      max-width: 510px;
+    }
+    @media(max-width: 767px){
+      font-size: 16px;
+      max-width: 300px;
+    }
     a {
       color: #367ADF;
       display: inline-block;
@@ -25,10 +33,19 @@
 
   .container {
     z-index: 1;
-
     min-height: 700px;
     padding-top: 140px;
     padding-bottom: 140px;
+    @media(max-width: 1400px){
+      padding-top: 80px;
+      padding-bottom: 80px;
+      min-height: 500px;
+    }
+    @media(max-width: 767px){
+      padding-top: 50px;
+      padding-bottom: 50px;
+      min-height: unset;
+    }
   }
 
   &Img {

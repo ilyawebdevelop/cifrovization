@@ -3,18 +3,91 @@
   background-color: #1B1B1B;
   padding-top: 110px;
   padding-bottom: 112px;
+
+  @media(max-width: 1400px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media(max-width: 767px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &Logo {
     margin-bottom: 17px;
+
+    img {
+      @media(max-width: 991px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
+
   .copyright {
     display: flex;
     column-gap: 45px;
     color: #fff;
     font-size: 14px;
     line-height: normal;
+
+    @media(max-width: 1400px) {
+      column-gap: 30px;
+    }
+
+    @media(max-width: 991px) {
+      justify-content: center;
+    }
+
+    @media(max-width: 767px) {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+
+    @media(max-width: 575px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    span {
+      display: flex;
+    }
   }
+
   &Socials {
     margin-left: 170px;
+
+    @media(max-width: 1400px) {
+      margin-left: 100px;
+    }
+
+    @media(max-width: 1199px) {
+      margin-left: 30px;
+      margin-top: 17px;
+    }
+
+    @media(max-width: 991px) {
+      margin-left: unset;
+    }
+
+    ul {
+      @media(max-width: 1199px) {
+        justify-content: flex-end;
+      }
+    }
   }
- 
+
+  &Phone {
+    @media(max-width: 1199px) {
+      margin-left: auto;
+      width: fit-content;
+    }
+
+    @media(max-width: 991px) {
+      margin-right: auto;
+      margin-top: 30px;
+    }
+  }
 }
