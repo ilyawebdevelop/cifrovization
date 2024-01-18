@@ -22,6 +22,11 @@
     &Head {
       border-radius: 50px;
       background: #367ADF;
+      .serviceTableRow {
+        @media(max-width: 767px){
+          align-items: center;
+        }
+      }
 
       .serviceTableCol {
         font-size: 22px;

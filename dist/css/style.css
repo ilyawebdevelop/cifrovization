@@ -13897,7 +13897,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .formInput {
-    height: 50px;
+    height: 60px;
     font-size: 16px;
   }
 }
@@ -14465,6 +14465,7 @@ h6 {
 @media (max-width: 767px) {
   .modalForm .consultFormButton {
     font-size: 16px;
+    height: 60px;
   }
 }
 .modalForm select {
@@ -14480,7 +14481,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .modalForm select {
-    height: 50px;
+    height: 60px;
     font-size: 16px;
     background: #F6F6F6 url("../img/icons/arrow-down.png") no-repeat right 22px top 20px/10px;
   }
@@ -15357,6 +15358,11 @@ h6 {
 .serviceTableHead {
   border-radius: 50px;
   background: #367ADF;
+}
+@media (max-width: 767px) {
+  .serviceTableHead .serviceTableRow {
+    align-items: center;
+  }
 }
 .serviceTableHead .serviceTableCol {
   font-size: 22px;
